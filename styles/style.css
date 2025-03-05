@@ -216,6 +216,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     background-color: #ffffffd9;
     background-blend-mode: lighten;
     background-image: url(../images/clouds.jpg);
+    /* background-image: url(https://i.postimg.cc/qv9g3GzR/clouds.jpg); */
     background-size: cover;
     padding: 40px 20px;
     border: 2px solid #333333;
@@ -261,7 +262,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 .contact-image {
     transform: rotate(90deg);
-    width: 3000px;
+    width: 3200px;
     height: 500px;
     z-index: -1;
     margin-left: -600px;
