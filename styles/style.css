@@ -1,0 +1,407 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: #333333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Typography & Icons */
+.icon {
+    font-size: 2rem;
+}
+
+input, textarea, button, select  {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 5px 0 15px;
+    padding: 10px 20px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #555555;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+/* Skip Navigation Link */
+.skip-nav-link {
+    border: 2px solid #333333;
+    padding: 8px 20px 8px 40px;
+    border-radius: 40px;
+    position: absolute;
+    left: -230px;
+    top: 60px;
+    transition: 3s;
+}
+
+.skip-nav-link:focus {
+    left: -20px;
+    transition: 1s;
+}
+
+/* Home Page */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    max-width: 800px;
+    margin: 120px auto 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.hero-heading {
+    font-size: 5rem;
+    margin: 0;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+.hero-heading span,
+.info a,
+.about span,
+.contact-form-heading span {
+    color: #007000;
+}
+
+.hero-text,
+.form-intro,
+.contact-form-intro,
+.signup-form-intro {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 300px;
+}
+
+.hero-link, .about a {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+
+.hero-link {
+    max-width: 100px;
+}
+
+.hero-image, .signup-image {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+.hero-image {
+    max-width: 303px;
+    top: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+/* Info Section */
+.info-section,
+.about-section,
+.form-section,
+.contact-form-section,
+.signup-form-section {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.info-section {
+    margin: 250px auto 200px;
+}
+
+.info {
+    margin-left: 22%;
+}
+
+.info-heading,
+.about-heading,
+.form-heading,
+.contact-form-heading,
+.signup-form-heading {
+    font-size: 3rem;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.info a {
+    text-decoration: underline;
+}
+
+.statistics {
+    width: 100%;
+    position: relative;
+    background-color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 30px;
+}
+
+.info-image {
+    position: absolute;
+    left: -30px;
+    top: -170px;
+    max-width: 200px;
+}
+
+.stat-heading {
+    color: #cccccc;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffffd9;
+    background-blend-mode: lighten;
+    background-image: url(../images/clouds.jpg);
+    /* background-image: url(https://i.postimg.cc/qv9g3GzR/clouds.jpg); */
+    background-size: cover;
+    padding: 40px 20px;
+    border: 2px solid #333333;
+}
+
+.about a {
+    display: inline-block;
+    text-align: center;
+    margin: 4px 0 20px;
+}
+
+/* Sign Up Form */
+.form-section {
+    margin: 120px auto;
+    max-width: 450px;
+    text-align: center;
+}
+
+.input,
+.address-input,
+.signup-input {
+    margin: 5px auto 10px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    margin: 10px auto 0;
+    width: 130px;
+}
+
+.submit-button:hover,
+.contact-submit-button:hover,
+.signup-submit-button:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+/* Contact Page */
+.contact-form-section {
+    display: flex;
+    padding: 30px;
+}
+
+.contact-image {
+    transform: rotate(90deg);
+    width: 3200px;
+    height: 500px;
+    z-index: -1;
+    margin-left: -600px;
+    position: relative;
+    left: 350px;
+}
+
+.contact-input {
+    font-size: 1rem;
+}
+
+.contact-submit-button {
+    max-width: 200px;
+}
+
+/* Sign up Page */
+.signup-form-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.signup-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.signup-image {
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.signup-submit-button {
+    margin: 10px auto 10px;
+    min-width: 120px;
+}
+
+.city-select {
+    max-width: 150px;
+    font-size: 1rem;
+}
+
+.city-select:focus-visible {
+    outline: 3px solid #bbd5ff;
+}
+
+.address {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.address-input {
+    max-width: 110px;
+}
+
+.signup-radio {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: inline;
+    width: max-content;
+}
+
+.popover-message {
+    display: block;
+    color: #e12938;
+    font-size: 0.9rem;
+}
+
+.signup-submit-button:disabled {
+    border-color: #aaaaaa;
+}
+
+.signup-submit-button:disabled:hover {
+    cursor: not-allowed;
+}
+
+.signup-submit-button:disabled:active {
+    transform: none;
+}
+
+.signup-submit-button:disabled:hover + .popover-message {
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background-color: #333333;
+}
+
+.footer.contact {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 10px;
+    max-width: 800px;
+    color: #ffffff;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.social-links li {
+    margin: auto;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 910px) {
+    body.contact {
+        background: url(../images/connect.jpg);
+    }
+
+    .info {
+        margin: 0;
+    }
+
+    .info-image {
+        position: static;
+        width: 100%;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    .footer.contact {
+        position: static;
+        margin-top: 120px;
+    }
+}
