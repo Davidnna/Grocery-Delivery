@@ -66,6 +66,8 @@ function checkInputs() {
     
     if (allFilled) {
         popoverMessage.style.opacity = '0';
+    } else {
+        popoverMessage.style.opacity = '1';
     }
     
     document.getElementById('submitButton').disabled = !allFilled;
